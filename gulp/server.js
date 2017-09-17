@@ -66,6 +66,6 @@ gulp.task('serve:e2e-dist', ['build'], function () {
   browserSyncInit(conf.paths.dist, []);
 });
 
-gulp.task('heroku:production', ['build'], function () {
+gulp.task('heroku', ['build'], function () {
   browserSyncInit(conf.paths.dist);
 });
