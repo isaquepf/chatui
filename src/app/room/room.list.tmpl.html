@@ -1,0 +1,16 @@
+<md-bottom-sheet class="md-list md-has-header">
+
+  <md-subheader ng-if="roomListCtrl.rooms.length == 0">Nenhuma sala disponível
+    <small>Crie uma sala!</small>
+  </md-subheader>
+  <md-subheader ng-if="roomListCtrl.rooms.length > 0">Salas disponíveis
+    <small>Clique para abrir uma sala.</small>
+  </md-subheader >
+  <md-content style="max-height: 200px;">
+    <md-chips ng-model="roomListCtrl.rooms" readonly="true">
+      <md-chip-template>
+        <strong ng-click="roomListCtrl.openRoom($index,$chip)">{{$chip.name}}</strong>
+      </md-chip-template>
+    </md-chips>
+  </md-content>
+</md-bottom-sheet>

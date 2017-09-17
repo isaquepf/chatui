@@ -1,0 +1,29 @@
+<md-toolbar>
+  <div class="md-toolbar-tools">    
+    <a href="">
+      <img src="/img/message-logo-icon.png"
+           style="width:50px; height:50px;"
+           ng-click="menuCtrl.toggleLeft()"
+           ng-if="$root.loggedIn">         
+    </a>
+    <!-- <md-button class="md-icon-button" aria-label="Settings" ng-click="menuCtrl.toggleLeft()" ng-if="$root.loggedIn">
+      <md-icon md-svg-icon="img/icons/ic_menu_24px.svg"></md-icon>
+    </md-button> -->
+    <h2>      
+      <span>CSC MENSSEGER</span>
+    </h2>
+    <span flex></span>
+    <md-button room-list-opener ng-if="$root.loggedIn">
+      Salas
+    </md-button>
+    <md-button login-button ng-if="!$root.loggedIn">
+      Login
+    </md-button>
+    <registration-button ng-if="!$root.loggedIn"></registration-button>
+    <md-button profile-button aria-label="More" ng-if="$root.loggedIn">
+      <img ng-src="{{ menuCtrl.user.imageUrl }}" style="     border-radius: 50%;
+    margin-top: 10px;   height: 50px;
+    background-color: white;" />
+    </md-button>
+  </div>
+</md-toolbar>
