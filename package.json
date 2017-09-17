@@ -4,7 +4,7 @@
   "dependencies": {
   },
   "scripts": {
-    "postinstall": "bower cache clean && bower install",    
+    
     "npm start": "gulp serve"    
   },
   "devDependencies": {
