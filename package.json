@@ -2,10 +2,11 @@
   "name": "angularChat",
   "version": "0.0.0",
   "dependencies": {
+    "bower": "1.8.2",
   },
   "scripts": {
-    "postinstall": "bower install",    
-    "npm start": "gulp serve"    
+    "start": "gulp serve",
+    "postinstall": "bower cache clean && bower install"    
   },
   "devDependencies": {
     "bower": "1.8.2",
