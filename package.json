@@ -3,7 +3,16 @@
   "version": "0.0.0",
   "dependencies": {},
   "scripts": {
-    "test": "gulp test"
+    "start:dev": "gulp",
+    "start": "node server",
+    "mocha": "node tools/test/run-mocha.js",
+    "karma": "node node_modules/karma/bin/karma start karma.conf.js",
+    "test": "gulp test",
+    "test-e2e": "gulp e2e.test",
+    "build:production": "cross-env NODE_ENV=production webpack",
+    "postinstall": "node tools/scripts/postinstall.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "gulp": "~3.9.0",
