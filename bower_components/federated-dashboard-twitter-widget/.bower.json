@@ -1,0 +1,30 @@
+{
+  "name": "federated-dashboard-twitter-widget",
+  "version": "0.1.6",
+  "ignore": [
+    ".tmp",
+    "spec",
+    "Gruntfile.js",
+    "testem.json",
+    "./views",
+    "./server.js"
+  ],
+  "dependencies": {
+    "underscore": "~1.6.0",
+    "jquery": "~2.1.0"
+  },
+  "devDependencies": {
+    "jasmine-jquery": "2.0.3",
+    "coffee-script": "~1.7.1"
+  },
+  "homepage": "https://github.com/bwvoss/federated-dashboard-twitter-widget",
+  "_release": "0.1.6",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.6",
+    "commit": "8d66f89e8bb3bb0b8c2a1091f74db6ca0d91580c"
+  },
+  "_source": "https://github.com/bwvoss/federated-dashboard-twitter-widget.git",
+  "_target": "~0.1.6",
+  "_originalSource": "twitter-widget"
+}
