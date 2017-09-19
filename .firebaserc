@@ -1,5 +1,6 @@
 {
   "projects": {
-    "production": "angularchattest"
+    "production": "angularchattest",
+    "staging": "chatcsc-35ac5"
   }
 }
