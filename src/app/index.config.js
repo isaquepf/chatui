@@ -26,7 +26,7 @@
       .accentPalette('blue');
 
     $httpProvider.defaults.useXDomain = true;
-    $httpProvider.defaults.withCredentials = true;
+    $httpProvider.defaults.withCredentials = false;
   }
 
 })();
